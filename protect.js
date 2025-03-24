@@ -22,5 +22,4 @@ window.addEventListener('beforeunload', function (event) {
         mustPreventClose = false;
     }
 });
-
-console.log("romakov: events listener is set");
+console.log("CTRL+W protector loaded");
