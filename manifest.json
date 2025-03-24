@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "ProtectFromCtrlW",
+    "version": "1.0",
+
+    "description": "Protects some tabs from being closed by Ctrl+W shortkey.",
+
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.leetcode.com/*", "*://*.designgurus.io/*", "*://*.interview.google.com/*"],
+            "js": ["protect.js"]
+        }
+    ]
+}
